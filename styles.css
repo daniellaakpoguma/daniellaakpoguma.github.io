@@ -12,15 +12,18 @@
 }
 
 .navbar .navbar-nav {
-    padding-left: 20px;   /* space from left */
-    padding-right: 20px;  /* space from right */
+    padding-left: 20px; 
+    padding-right: 20px; 
 }
-
 
 .navbar a {
     padding-right: 50px;
     color: #FFDC49;
     font-family: 'Roboto Mono';
+}
+
+.navbar a:visited{
+    color: #ffffff;
 }
 
 .navbar a:hover{
@@ -49,7 +52,7 @@
 .home-p {
     max-width: 1000px;        
     padding: 0 20px;  
-    margin: 30px auto 40px auto;  /* top auto bottom auto */
+    margin: 30px auto 40px auto; 
     text-align: center;   
 }
 
@@ -59,20 +62,15 @@
 }
 
 .highlight {
-    color: #FFDC49; /* bright, friendly color */
-    font-weight: 600;
+    color: #FFDC49;
+    font-weight: 800;
 }
-
-.section-title {
-    color: #FFDC49; 
-    font-weight: 600;
-}
-
 
 .character-img {
     width: 270px;  
     height: auto;   
     margin: 0px;
+    margin-top:30px;
 }
 
 .home button{
@@ -84,6 +82,8 @@
     border-radius: 50px;  
 }
 
+
+/* Footer Section */
 .site-footer {
     font-family: 'Roboto Mono';
     padding: 1.5rem 0;

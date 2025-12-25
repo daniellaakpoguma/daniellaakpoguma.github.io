@@ -11,6 +11,12 @@
     font-family: 'Roboto Mono';
 }
 
+.navbar .navbar-nav {
+    padding-left: 20px;   /* space from left */
+    padding-right: 20px;  /* space from right */
+}
+
+
 .navbar a {
     padding-right: 50px;
     color: #FFDC49;
@@ -40,18 +46,34 @@
     padding-top: 50px;
 }
 
-.home h3{
-    font-family: 'Roboto Mono';
-    font-size: 3vw;
-    color:  white;
-    margin-bottom: 40px;
+.home-p {
+    max-width: 1000px;        
+    padding: 0 20px;  
+    margin: 30px auto 40px auto;  /* top auto bottom auto */
+    text-align: center;   
 }
+
+.home p{
+    font-family: 'Roboto Mono';
+    color:  white;
+}
+
+.highlight {
+    color: #FFDC49; /* bright, friendly color */
+    font-weight: 600;
+}
+
+.section-title {
+    color: #FFDC49; 
+    font-weight: 600;
+}
+
 
 .character-img {
-    width: 400px;   /* change this */
-    height: auto;   /* keeps aspect ratio */
+    width: 270px;  
+    height: auto;   
+    margin: 0px;
 }
-
 
 .home button{
     font-family: 'Roboto Mono';
@@ -59,14 +81,16 @@
     padding: 15px 30px;
     margin-bottom: 40px;
     font-size: 15px;
+    border-radius: 50px;  
 }
 
 .site-footer {
+    font-family: 'Roboto Mono';
     padding: 1.5rem 0;
     text-align: center;
     font-size: 0.9rem;
     color: #FFDC49;
-    background-color: #070e73;
+    background-color: #000000;
 }
 
 .site-footer a {

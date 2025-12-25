@@ -1,145 +1,161 @@
-/* Add a custom background color for the navbar */
-.custom-navbar {
-    background-color: #215838; /* Pink color */
+/* Fonts */
+@font-face {
+    font-family: 'Adelia';
+    src: url('fonts/ADELIA.otf') format('woff'); 
 }
 
-.navbar-brand {
-    color: #ff70bf; /* Text color for the brand/logo */
-    font-size: 1.5rem; 
+/* Navigation Bar  Section */
+/* Navbar general styling */
+.navbar {
     font-weight: bold;
-    font-family: 'DM Serif Display';
+    background-color: #070e73;
+    font-family: 'Roboto Mono';
 }
 
-.nav-link {
-    color: #ff70bf;  /* Text color for the navigation links */
-    font-weight: bold;
-    font-size: 1rem; 
+/* Brand */
+#navbar_logo {
+    color: #FFDC49;
+    font-family: 'Adelia';
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
 }
 
-/* Hover effect for the navigation links */
-.nav-link:hover {
-    text-decoration: underline; /* Underline on hover */
+/* Links */
+.navbar a {
+    padding-right: 50px;
+    color: #FFDC49;
+    font-family: 'Roboto Mono';
+    transition: color 0.3s;
+}
+
+a:link, a:visited {
+    color: #FFDC49;
+    text-decoration: none;
+}
+
+.navbar a:hover {
     color: #ffffff;
 }
 
-/* Sections */
-#beginning, #about, #projects, #contact{
-    width: 100vw; /* Set the width to 80% of the viewport width */
-    height: 85vh; /* Set the height to 50% of the viewport height */
+/* Navbar padding for spacing */
+.navbar .navbar-nav {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* beginning */
-
-#beginning{
-    padding: 50px;
-    background-color: #215838;  
+/* Hamburger SVG toggler sizing */
+.navbar-toggler span svg {
+    display: block;
 }
 
-#beginning h2{
-    color: #ff70bf;
-    font-weight: bold;
-    font-family: 'DM Serif Display';
-    font-size: 5rem; 
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    /* vertical menu on mobile */
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* links larger for easier tapping */
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    /* center links vertically in collapsed menu */
+    .collapse.show {
+        text-align: center;
+    }
+}
+
+
+
+
+/* Home Section */
+.home{
+    height: 1000px;
     text-align: center;
-    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #070e73;
+    padding-top: 50px;
 }
 
-#beginning p{
-    color:  #ffffff;
-    font-size: 2.5rem; 
+.home-p {
+    max-width: 1000px;        
+    padding: 0 20px;  
+    margin: 30px auto 40px auto; 
+    text-align: center;   
+}
+
+.home p{
+    font-family: 'Roboto Mono';
+    color:  white;
+}
+
+.highlight {
+    color: #FFDC49;
+    font-weight: 800;
+}
+
+.character-img {
+    width: 270px;  
+    height: auto;   
+    margin: 0px;
+    margin-top:30px;
+}
+
+.home button{
+    font-family: 'Roboto Mono';
+    background-color: #FFDC49;
+    padding: 15px 30px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    border-radius: 50px;  
+}
+
+
+/* Footer Section */
+.site-footer {
+    font-family: 'Roboto Mono';
+    padding: 1.5rem 0;
     text-align: center;
-    font-family: Montserrat;
+    font-size: 0.9rem;
+    color: #FFDC49;
+    background-color: #000000;
 }
 
-#beginning button{
-    background-color:#ff70bf;
+.site-footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
     color: #ffffff;
-    text-decoration: none;
-    margin-top: 1.5rem;
-    margin-left: 37rem;
 }
 
-/* About Me Section*/
-#about{
-    height: 95vh; 
-    padding-right: 3rem;
-}
 
-#about h2{ 
-    padding-top: 2rem; 
-    text-align: center;
-    font-weight: bold;
-    font-size: 70px;
-    color:  #ff70bf; 
-    font-family: 'DM Serif Display';
-}
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px width (typically tablets) */
+    h1{
+        font-size: 80px;
+    }
 
-#about p, ul {
-    font-size: 25px;
-    font-family: Montserrat;
-}
-/* Projects Section */
-#projects{
-    background-color:  #215838;
-    box-sizing: border-box;
-    padding-left: 2rem;
-    height: 95vh;
-}
+    h2{
+        font-size: 30px;
+    }
 
-#projects h2 { 
-    color: #ff70bf;
-    font-family: 'DM Serif Display';
-    font-weight: bold;
-    font-size: 70px;
-    padding-top: 2rem; 
-    text-align: center;
-}
-
-.btn-green{
-    background-color: #ff70bf;
-    color: #215838;
-}
-
-/* Contact Me Section */
-#contact{
-    height: 50vh;
-    padding-left:5rem;
-}
-
-#contact h2 { 
-    padding-top: 2rem; 
-    text-align: center;
-    font-weight: bold;
-    color: #ff70bf;
-    font-family: 'DM Serif Display';
-    font-size: 70px;
-}
-#contact a{ 
-    margin-bottom: 5rem;
-}
-
-form div{
-    padding-bottom: 1rem;
-}
-
-#contact p{
-    font-family: Montserrat;
-    font-size:20px;
-}
-
-.fa-linkedin {
-    background:#ff70bf;
-    color: white;
-    font-size: 30px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
+    p{
+        font-size: 10px;
+    }
   }
+  
+  @media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px width (typically smartphones) */
+    h1{
 
-  #contact .contact-details{
-    padding-right: 5rem;
+    }
   }
+  

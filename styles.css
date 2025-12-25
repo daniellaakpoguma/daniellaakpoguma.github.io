@@ -2,8 +2,7 @@
 @font-face {
     font-family: 'Adelia';
     src: url('fonts/ADELIA.otf') format('woff'); 
-  }
-
+}
 
 /* Navigation Bar  Section */
 .navbar{
@@ -76,7 +75,7 @@
 }
 
 .site-footer a:hover {
-    color: #000;
+    color: #ffffff;
 }
 
 
